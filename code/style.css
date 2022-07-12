@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.container {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background: rgb(55,213,196);
+    background: linear-gradient(90deg, rgba(55,213,196,1) 50%, rgba(56,228,210,1) 50%);
+}
