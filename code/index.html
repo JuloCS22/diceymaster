@@ -10,17 +10,16 @@
     <title>DiceyGame</title>
 </head>
 <body>
-    <div class="container p-4">
+    <div class="container p-1">
         <div class="row justify-content-center">
             NEW GAME
         </div>
         <div class="row p-4 text-center">
             <div class="col ">
                 <div class="player">
-                    Player 1
+                    PLAYER 1
                 </div>
-                <div class="score">
-                    Score
+                <div class="score" id="score1">
                 </div>
             </div>
             <div class="col">
@@ -28,25 +27,25 @@
             </div>
             <div class="col">
                 <div class="player">
-                    Player 1
+                   PLAYER 2
                 </div>
                 <div class="score">
                     Score
                 </div>
             </div>
         <div class="row p-4 text-center">
-            <div class="col">
+            <div class="col current">
                 Current Score
             </div>
             <div class="col">
                 <div class="roll">
-                    Roll Dice
+                    <button class="btn btn-light" id="roll">Roll Dice !</button>
                 </div>
                 <div class="hold">
-                    Hold
+                    <button class="btn btn-success" id="hold">Hold</button>
                 </div>
             </div>
-            <div class="col">
+            <div class="col current">
                 Current Score
             </div>
         </div>
