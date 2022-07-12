@@ -2,12 +2,6 @@ let roll = document.getElementById('roll');
 let hold = document.getElementById('hold');
 let score1 = document.getElementById('score1');
 
-function rollDice() {
-    
-}
-
-
-
 roll.addEventListener('click', () => {
     let dice = Math.floor(Math.random() * (7 - 1)) + 1;
     let result = 0;
