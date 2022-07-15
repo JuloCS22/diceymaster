@@ -5,11 +5,23 @@
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     background: rgb(55,213,196);
-    background: linear-gradient(90deg, rgba(55,213,196,1) 50%, rgba(56,228,210,1) 50%);
+    background: linear-gradient(90deg, rgb(238, 241, 241) 50%, rgb(255, 255, 255) 50%);
 }
 
-#player1, #player2, .current {
-    font-size: 40px;
-    color: brown;
+.actualPlayer {
+    color: green;
+    background-color: white;
+}
+
+.current {
+    background-color: #ee3c45;
+}
+
+.fa {
+    color: #ee3c45;
+}
+
+.dice {
+    font-size: 100px;
 }
 

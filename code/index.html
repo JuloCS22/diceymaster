@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,42 +10,38 @@
     <title>DiceyGame</title>
 </head>
 <body>
-    <div class="container p-1">
-        <div class="row justify-content-center newgame">
-            NEW GAME
+    <div class="container container-fluid p-5">
+        <div class="row">
+            <div class="col text-center"><buttn class="btn" id="newgame"><i class="fa fa-solid fa-plus fs-2 p-2"></i>NEW GAME</buttn></div>
         </div>
-        <div class="row p-4 text-center">
-            <div class="col ">
-                <div class="player">
-                    PLAYER 1 : <span id="player1"></span>
-                </div>
-                <div class="score" id="score1">
-                </div>
+        <div class="row text-center p-4">
+            <div class="col">
+                <div class="fs-1">PLAYER 1 : <span class="fs-1" id="player1"></span></div>
+                <div class="fs-1 text-danger" id="score1">0</div>
             </div>
             <div class="col">
-                <div class="dice" id="dice"></div>
+                <div class="p-5" id="dice"><i class="dice fa fa-solid fa-dice-two"></i></div>
             </div>
             <div class="col">
-                <div class="player">
-                   PLAYER 2 : <span id="player2"></span>
-                </div>
-                <div class="score" id="score2">
-                </div>
+                <div class="fs-1">PLAYER 2 : <span class="fs-1" id="player2"></span></div>
+                <div class="fs-1 text-danger" id="score2">0</div>
             </div>
-        <div class="row p-4 text-center">
+        <div class="row text-center p-4">
             <div class="col current">
-                Current Score : <span id="current1"></span>
+                Current <br>
+                <span class="text-light" id="current1">0</span>
             </div>
             <div class="col">
                 <div class="roll">
-                    <button class="btn btn-light" id="roll">Roll Dice !</button>
+                    <button class="btn" id="roll"><i class="fa fa-regular fa-repeat fs-2 p-2"></i>ROLL DICE</button>
                 </div>
                 <div class="hold">
-                    <button class="btn btn-success" id="hold">Hold</button>
+                    <button class="btn" id="hold"><i class="fa fa-solid fa-arrow-down fs-2 p-2"></i>HOLD</button>
                 </div>
             </div>
             <div class="col current">
-                Current Score : <span id="current2"></span>
+                Current <br>
+                <span class="text-light" id="current2">0</span>
             </div>
         </div>
     </div>
