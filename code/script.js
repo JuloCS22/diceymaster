@@ -5,10 +5,13 @@ let hold = document.getElementById('hold');
 let score1 = document.getElementById('score1');
 let score2 = document.getElementById('score2');
 let dice = document.getElementById('dice');
-let actualPlayer = document.getElementById('actualplayer')
-let current1 = document.getElementById('current1')
-let current2 = document.getElementById('current2')
-let newGame = document.getElementById('newgame')
+let actualPlayer = document.getElementById('actualplayer');
+let current1 = document.getElementById('current1');
+let current2 = document.getElementById('current2');
+let newGame = document.getElementById('newgame');
+let score = score1;
+let current = current1;
+let joueur = 0;
 let total = 0;
 let holdScore = 0;
 let imgDice = ['<i class="dice fa fa-solid fa-dice-one"></i>', 
@@ -43,6 +46,18 @@ function diceResult(number) {
 
 // Function : changement de joueur
 
+function changePlayer() {
+    if (joueur === 0) {
+        joueur = 1;
+        score = score2;
+        current = current2;
+    } else {
+        joueur = 0;
+        score = score1;
+        current = current1;
+    }
+}
+
 
 // Function : reset
 
@@ -66,10 +81,11 @@ roll.onclick = function() {
     if (result != 1) {
         diceResult(result);
         total = total + result;
-        current1.innerText = total;
+        current.innerText = total;
     } else {
         diceResult(1);
         alert('Dommage, tu as fait 1, changement de joueur !');
+        changePlayer();
         reset();
     }
     },1000)
@@ -79,7 +95,8 @@ roll.onclick = function() {
 
 hold.onclick = function() {
     let previousScore = score1.innerText;
-    score1.innerText = Number(total) + Number(previousScore);
+    score.innerText = Number(total) + Number(previousScore);
+    changePlayer();
     reset()
 }
 
@@ -87,8 +104,8 @@ hold.onclick = function() {
 
 newGame.onclick = function() {
     document.addEventListener('DOMContentLoaded', namePlayers());
-    score1.innerText = 0;
-    score2.innerText = 0;
+    score.innerText = 0;
+    score.innerText = 0;
 }
 
 
