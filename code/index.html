@@ -10,28 +10,28 @@
     <title>DiceyGame</title>
 </head>
 <body>
-    <div class="container container-fluid p-5">
+    <div class="container container-fluid">
         <div class="row">
             <div class="col text-center"><buttn class="btn" id="newgame"><i class="fa fa-solid fa-plus fs-2 p-2"></i>NEW GAME</buttn></div>
         </div>
         <div class="row text-center p-4">
-            <div class="col">
-                <div class="fs-1"> PLAYER 1 <br><span class="fs-1 go" id="player1"></span></div>
+            <div class="col-sm-12 col-md-4">
+                <div class="fs-1"><span class="fs-1 go" id="player1"></span></div>
                 <div class="fs-1 text-danger" id="score1">0</div>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
                 <div class="p-5" id="dice"><i class="dice fa fa-solid fa-dice-two"></i></div>
             </div>
-            <div class="col">
-                <div class="fs-1"> PLAYER 2 <br><span class="fs-1" id="player2"></span></div>
+            <div class="col-sm-12 col-md-4">
+                <div class="fs-1"> <span class="fs-1" id="player2"></span></div>
                 <div class="fs-1 text-danger" id="score2">0</div>
             </div>
         <div class="row text-center p-4">
-            <div class="col current">
-                CURRENT <br>
+            <div class="col-sm-12 col-md-4 current">
+                CURRENT<br>
                 <span class="text-light fs-2" id="current1">0</span>
             </div>
-            <div class="col">
+            <div class="col-sm-12 col-md-4">
                 <div class="roll">
                     <button class="btn" id="roll"><i class="fa fa-regular fa-repeat fs-2 p-2"></i>ROLL DICE</button>
                 </div>
@@ -39,8 +39,8 @@
                     <button class="btn" id="hold"><i class="fa fa-solid fa-arrow-down fs-2 p-2"></i>HOLD</button>
                 </div>
             </div>
-            <div class="col current">
-                CURRENT <br>
+            <div class="col-sm-12 col-md-4 current">
+                CURRENT<br>
                 <span class="text-light fs-2" id="current2">0</span>
             </div>
         </div>
