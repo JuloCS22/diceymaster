@@ -1,0 +1,19 @@
+{
+  "name": "eval-2",
+  "version": "1.0.0",
+  "description": "diceymaster",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuloCS22/Eval-2.git"
+  },
+  "author": "julo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuloCS22/Eval-2/issues"
+  },
+  "homepage": "https://github.com/JuloCS22/Eval-2#readme"
+}
