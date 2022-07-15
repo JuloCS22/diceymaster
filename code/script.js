@@ -104,7 +104,7 @@ roll.onclick = function() {
 hold.onclick = function() {
     let previousScore = score.innerText;
     score.innerText = Number(total) + Number(previousScore);
-    if (score.innerText >= 10) {
+    if (score.innerText >= 100) {
         let winner;
         if (joueur = 0) {
             winner = player1.innerText
