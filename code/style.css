@@ -40,3 +40,8 @@
         transform: rotate(8deg);
     }
 }
+
+.go {
+    font-weight: bold;
+    color: #51d378;
+}
